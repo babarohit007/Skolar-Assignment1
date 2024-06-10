@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 9</title>
+    <style>
+        header{
+            text-align: center;
+        }
+        nav{
+            background-color: bisque;
+            height: 30px;
+            text-align: center;
+        }
+        nav li{
+            list-style: none;
+            display: inline;
+            margin-left: 10px;           
+            font-weight: bolder;
+        }
+        li a{
+            text-decoration: none;
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        article {
+            flex: 3;
+            background: #f4f4f4;
+            margin-right: 10px;
+        }
+        aside {
+            flex: 1;
+            background: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>HTML Semantic Element</h1></header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#article">Article</a></li>
+            <li><a href="#aside">Aside</a></li>
+            <li><a href="#footer">Footer</a></li>
+        </ul>
+    </nav>
+    <section>
+        <article id="article">
+            <h2>Main Content Area</h2>
+            <p>This is the main content of the page. It is placed inside an <code>&lt;article&gt;</code> element, which is used for standalone content.</p>
+            <p>HTML5 provides several semantic elements to better structure web pages and improve accessibility and SEO.</p>
+        </article>
+        <aside id="aside">
+            <h2>Related Content</h2>
+            <p>This is some related content or sidebar information placed inside an <code>&lt;aside&gt;</code> element.</p>
+            <p>Asides are often used for side notes, related links, or advertisements.</p>
+        </aside>
+    </section>
+    <footer id="footer">
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+
+
+    
+</body>
+</html>
